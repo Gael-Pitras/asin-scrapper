@@ -2,20 +2,20 @@
 # Amazon Product Data Scraper
 
 ## Description
-Ce script Python permet de récupérer des données détaillées sur les produits à partir de leur ASIN (Amazon Standard Identification Number) sur le site Amazon. Il est capable d'extraire des informations telles que le titre, le sous-titre, la description, le prix et d'autres détails de produits.
+This Python script retrieves detailed product data using the Amazon Standard Identification Number (ASIN) from Amazon's website. It is capable of extracting information such as the title, subtitle, description, price, and other product details.
 
 ## Installation
-Assurez-vous d'avoir Python installé sur votre système. Vous aurez également besoin des bibliothèques `requests` et `beautifulsoup4`.
+Ensure you have Python installed on your system. You will also need the `requests` and `beautifulsoup4` libraries.
 
-Pour installer les dépendances, exécutez :
+To install the dependencies, run:
 ```
 pip install requests beautifulsoup4
 ```
 
-## Utilisation
-Le script peut être exécuté avec Python. Vous devez fournir l'ASIN du produit et le code de langue du site Amazon (par exemple, "fr" pour Amazon France).
+## Usage
+The script can be executed with Python. You need to provide the product's ASIN and the language code of the Amazon site (e.g., "fr" for Amazon France).
 
-Exemple d'utilisation :
+Example of use:
 ```python
 asin = "B00IKI352E"
 language = "fr"
@@ -23,16 +23,27 @@ result = asinResolver(asin, language)
 print(result)
 ```
 
-Le script va extraire les informations du produit et les imprimer sous forme de JSON.
+The script will extract the product information and print it in JSON format.
 
-## Fonctionnalités
-- Extraction des détails du produit à partir d'Amazon via ASIN.
-- Prise en charge de différents domaines Amazon en fonction de la langue.
-- Récupération de diverses informations telles que le titre, la description, le prix, etc.
+## Features
+- Extracting product details from Amazon using ASIN.
+- Supports different Amazon domains based on language.
+- Retrieves various information such as title, description, price, etc.
 
-## Avertissements
-- Ce script est uniquement destiné à des fins éducatives et de recherche.
-- Le scraping de sites web peut être contraire aux conditions d'utilisation du site, utilisez ce script de manière responsable.
+## Warnings
+- This script is intended for educational and research purposes only.
+- Web scraping may be against the terms of use of the website, use this script responsibly.
 
-## Licence
-Ce projet est sous licence libre. Vous êtes libre de l'utiliser et de le modifier pour vos besoins personnels.
+## License
+This project is under a free license. You are free to use and modify it for your personal needs.
+
+## Requirements
+This project requires the following libraries:
+
+- requests==2.31.0
+- beautifulsoup4==4.12.2
+
+Make sure to install these with the command:
+```
+pip install -r requirements.txt
+```
