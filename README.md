@@ -37,13 +37,4 @@ The script will extract the product information and print it in JSON format.
 ## License
 This project is under a free license. You are free to use and modify it for your personal needs.
 
-## Requirements
-This project requires the following libraries:
 
-- requests==2.31.0
-- beautifulsoup4==4.12.2
-
-Make sure to install these with the command:
-```
-pip install -r requirements.txt
-```
